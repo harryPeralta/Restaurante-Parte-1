@@ -4,9 +4,9 @@
     require_once "core/routes.php";
     require_once "config/conexion.php";
    
-    
     if(isset($_GET['control'])) 
     {
+        
         $controlador = cargarControlador($_GET['control']);
         
         if(isset($_GET['action'])) 
@@ -39,3 +39,4 @@
         cargarAccion($controlador, ACCION_PRINCIPAL);
     }
 ?>
+

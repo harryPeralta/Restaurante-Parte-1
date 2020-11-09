@@ -1,16 +1,22 @@
 <?php require "views/shared/header.php"; ?>
 
 <div class="container">
+
+<center>
+    
+        <img src="assets/img/menu.png" alt=""> <br><br>
+        <img src="assets/img/chefsito.png"> <br><br>
+    
+<div class="container">
 <div class="row">
 <div class="col-md-1"></div>
-<h1> <?php echo $data["titulo"]?></h1>
 </div>
 <div class="row">
 <div class="col-md-1"></div>
         <div class="col-md-8">
 
                     <?php foreach($data['productos'] as $producto)   { ?>
-                    <form action="">
+                    <form action="index.php?control=menu&action=inicio">
                     <table class="table table-striped">
                         <thead class="table-light">
                             <tr>
@@ -21,7 +27,7 @@
                         <tbody class="table-danger">
                             <tr>
                             <th></th>
-                            <th scope="row"><img src="<?= $producto['foto'] ?>"width="250" height="160" ></th>
+                            <th scope="row"><img src="<?= $producto['foto'] ?>"width="250" height="160"></th>
                             <th></th>
                             <td scope="row"><?= $producto['descripcion']?></td>
                             <td scope="row"><a href="index.php?control=producto&action=insert" class="btn btn-danger">Agregar al carro</a></td>
@@ -32,7 +38,6 @@
                     <?php } ?>
         </div>
         <div class="col-md-2"></div>
-
-
+</center>
 
 <?php require "views/shared/footer.php"; ?>
