@@ -15,18 +15,18 @@
         return $controlador;
     
     }
-
-    function cargarAccion($controlador,$accion, $identificador = null)
+    
+    function cargarAccion($controlador,$accion, $identificacion = null)
     {
         if(isset($accion) && method_exists($controlador, $accion))
         {
-            if($identificador == null)
+            if($identificacion == null)
             {
                 $controlador->$accion();
             }
             else
             {
-                $controlador->$accion($identificador);
+                $controlador->$accion($identificacion);
             }
         }
         else
@@ -34,6 +34,6 @@
             $controlador->ACCION_PRINCIPAL();
         }
     }
-
+    
     
 ?>

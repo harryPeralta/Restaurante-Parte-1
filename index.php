@@ -11,10 +11,12 @@
         
         if(isset($_GET['action'])) 
         {
-            if(isset($_GET['identificador']))
+            
+            if(isset($_GET['identificacion']))
             {
-                cargarAccion($controlador, $_GET['action'], $_GET['identificador']);
+                cargarAccion($controlador, $_GET['action'], $_GET['identificacion']);
             }
+
             else if(isset($_GET['codigo']))
             {
                 cargarAccion($controlador, $_GET['action'], $_GET['codigo']);
@@ -29,12 +31,11 @@
         else{
             
             $controlador =  cargarControlador(CONTROLADOR_PRINCIPAL);
-            
-    
         }
     }
     else
     {
+        
         $controlador =  cargarControlador(CONTROLADOR_PRINCIPAL);
         cargarAccion($controlador, ACCION_PRINCIPAL);
     }

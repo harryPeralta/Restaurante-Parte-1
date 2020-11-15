@@ -1,6 +1,16 @@
 body{
-    background-image: url(https://st.depositphotos.com/1314526/3070/v/450/depositphotos_30702005-stock-illustration-wooden-texture-background.jpg);
-    
+    background-image: url("../img/fondo.jpg");
+
+}
+body::-webkit-scrollbar {
+	width: 15px;
+}
+
+body::-webkit-scrollbar-thumb {
+	background: #e61010;
+} 
+td{
+    text-align: center;
 }
 .colornavbar
 {
@@ -93,7 +103,22 @@ h2{
         transform: rotateY(360deg);
     }
 }
-.centrar
+
+.letraBlanca
 {
-    align;
+    color: rgb(255, 255, 255);
 }
+.letraNegra
+{
+    color: black;
+}
+
+@font-face{
+    font-family: 'fuente';
+    src: url(../fuentes/Jelly\ Boots.otf);
+}
+
+#fuente{
+    font-family: 'fuente';
+}
+

@@ -15,13 +15,13 @@
     <span class="navbar-toggler-icon"></span>
   </button>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <div class="collapse navbar-collapse" id="fuente">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="index.php?control=menu&action=inicio">Incio <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="index.php?control=home&action=index">Incio <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="index.php?control=menu&action=menu">Menú</a>
+        <a class="nav-link" href="index.php?control=producto&action=index">Menú</a>
       </li>
     
     </ul>
