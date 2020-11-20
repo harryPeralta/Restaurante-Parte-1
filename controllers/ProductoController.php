@@ -5,6 +5,8 @@
         public function __construct()
         {
             require_once "models/Producto.php";
+            require_once "models/Carro.php";
+        
         }
 
         public function index()

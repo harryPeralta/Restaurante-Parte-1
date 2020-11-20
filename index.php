@@ -9,12 +9,13 @@
         
         $controlador = cargarControlador($_GET['control']);
         
+        
         if(isset($_GET['action'])) 
         {
             
-            if(isset($_GET['identificacion']))
+            if(isset($_GET['id']))
             {
-                cargarAccion($controlador, $_GET['action'], $_GET['identificacion']);
+                cargarAccion($controlador, $_GET['action'], $_GET['id']);
             }
 
             else if(isset($_GET['codigo']))
@@ -24,7 +25,6 @@
             
             else
             {
-
                 cargarAccion($controlador, $_GET['action']);
             }
         }

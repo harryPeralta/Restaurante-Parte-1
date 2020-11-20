@@ -3,21 +3,22 @@
     {
         private $db;
         private $carros;
-        private $identificador;
+        private $identificacion;
+        // Variable para el numero del carro, que sea publica para que cuando se accione el botón finalizar pedido 
+        // esta se aumente en 1 y así mismo poder diferencias los carros. 
 
         public function __construct()
         {
             $this->db = Conectar::conexion();
-            $this->carros = array();
-            $this->identificador = null;
+            $this->carros = array();  
+            $this->identificacion =null;
         }
+
+        
 
         public function listar()
         {
-            $sql =  "SELECT * " .
-                    "FROM carro " .
-                    "JOIN producto " .
-                    "ON carro.indentificadorProducto = producto.identificador";
+            $sql =  "SELECT * FROM carro" ;
             $resultado = $this->db->query($sql);
             if(!$resultado)
             {
@@ -35,11 +36,11 @@
             }
             return $this->carros;
         }
+        
 
-        public function insert($id, $identificadorProducto, $precioTotal)
+        public function insert($identificadorProducto, $precioTotal)
         {
-            $this->identificador = $id;
-            $sql = "INSERT INTO carro (identificadorProducto, precioTotal) VALUES ( $id, $identificadorProducto, $precioTotal)"; 
+            $sql = "INSERT INTO carro (numeroCarro, identificadorProducto, precioTotal) VALUES (1, $identificadorProducto, $precioTotal)"; 
             $this->db->query($sql); 
         }
         

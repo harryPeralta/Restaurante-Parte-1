@@ -14,8 +14,7 @@
             
             <table class="table " id="fuente">
                 
-          
-            
+
                 <thead class="bg-danger">
                     <tr>
                         <td> <?= $producto['nombre'] ?> </td>
@@ -25,12 +24,12 @@
                 </thead>
             
                 <tbody class="letraBlanca">
-                    <td> <img src="<?= $producto['foto'] ?> "width="250" height="160"> </td>
+                    <td> <img src="<?= $producto['foto'] ?> " class="rounded" width="250" height="160"> </td>
                     <td> <?= $producto['descripcion'] ?> </td>
                     <td> <button <?= $producto['identificador'] ?> class="btn btn-success"> Agregar  <br> al carro</button> </td>
                 
-                <input type="number" name="identificador" id="identificador" method="post" value=<?php echo $producto['identificador']; ?>>
-                <input type="number" name="precio" id="precio" method="post" value=<?php echo $producto['precio']; ?>>
+                <input type="hidden" name="identificador" id="identificador" method="post" value=<?php echo $producto['identificador']; ?>>
+                <input type="hidden" name="precio" id="precio" method="post" value=<?php echo $producto['precio']; ?>>
                 </tbody>
             
             </table>

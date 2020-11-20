@@ -11,6 +11,7 @@
             $this->db = Conectar::conexion();
             $this->productos = array();
             $this->identificacion = null;
+            
         }
 
         public function listar()
