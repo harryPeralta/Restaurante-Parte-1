@@ -22,7 +22,7 @@
             }
             else
             {
-                $sql = "INSERT INTO pedido (valor, estado, numeroDocumentoCliente, idCarroCompras) VALUES ($valor, 'solicitado', '12345', $idCarroCompras)";
+                $sql = "INSERT INTO pedido (valor, estado, numeroDocumentoCliente, idCarroCompras) VALUES ($valor, 'solicitado', '1005815552', $idCarroCompras)";
                 $this->db->query($sql); 
             }
         }

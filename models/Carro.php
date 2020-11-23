@@ -18,7 +18,11 @@
 
         public function listar()
         {
-            $sql =  "SELECT * FROM carro" ;
+            $sql =  "SELECT * " .
+                    "FROM producto " .
+                    "JOIN carro " .
+                    "ON producto.identificador = carro.identificadorProducto " ;
+
             $resultado = $this->db->query($sql);
             if(!$resultado)
             {

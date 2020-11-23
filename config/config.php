@@ -1,4 +1,4 @@
 <?php
-    define("CONTROLADOR_PRINCIPAL", "Menu");
-    define("ACCION_PRINCIPAL", "inicio");
+    define("CONTROLADOR_PRINCIPAL", "Home");
+    define("ACCION_PRINCIPAL", "index");
 ?>

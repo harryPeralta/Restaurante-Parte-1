@@ -10,6 +10,7 @@
         public function index()
         {
             $carros = new Carro();
+            $data["titulo"] = "Lista de Productos";
             $data["carros"] = $carros->listar();
 
             require_once "views/carros/index.php";

@@ -125,3 +125,9 @@ h2{
 table{
     padding: 0%;
 }
+.pull-right {
+    float: right !important;
+  }
+  .pull-left {
+    float: left !important;
+  }

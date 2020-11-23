@@ -10,6 +10,7 @@
         public function index()
         {
             $pedido = new Pedido();
+            $data["titulo"] =  "Pedido";
             require_once "views/pedidos/index.php";
         }
 
