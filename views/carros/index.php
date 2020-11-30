@@ -63,7 +63,8 @@
                  
                 <td style="text-align:right;"> <input readonly class="form-control" type="hidden" name="precioTotal" id="precioTotal" method="post" > <h2 style="text-align:right;"> <?php echo number_format( $total) ?> </h2> </td>
                  <td></td>
-                 
+                 <input type="hidden" name="precioTotal" id="precioTotal" method="post" value=<?php echo $total; ?>>
+
                 </tr>
             </table>
             <div class="pull-left">

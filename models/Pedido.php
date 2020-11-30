@@ -16,9 +16,15 @@
              
             if(isset($_SESSION["numeroDocumento"]))
             {
-                $numeroDocumento = $_SESSION["numeroDocumento"];
-                $sql = "INSERT INTO pedido (valor, estado, numeroDocumentoCliente, idCarroCompras) VALUES ($valor, 'solicitado', '$numeroDocuento', $idCarroCompras)"; 
-                $this->db->query($sql);
+                if(isset($_SESSION["rol"]))    
+                {
+                    if($_SESSION["rol"] == 'Cliente')
+                    {
+                        $numeroDocumento = $_SESSION["numeroDocumento"];
+                        $sql = "INSERT INTO pedido (valor, estado, numeroDocumentoCliente, idCarroCompras) VALUES ($valor, 'solicitado', '$numeroDocuento', $idCarroCompras)"; 
+                        $this->db->query($sql);                       
+                    }    
+                }
             }
             else
             {
