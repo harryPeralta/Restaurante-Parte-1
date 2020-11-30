@@ -1,6 +1,5 @@
 body{
-    background-image: url("../img/fondo.jpg");
-
+    background-image: url(https://projects.saicharan.com/navpills/veg-table.jpg);
 }
 body::-webkit-scrollbar {
 	width: 15px;
@@ -131,3 +130,93 @@ table{
   .pull-left {
     float: left !important;
   }
+  .card {
+    margin: 2rem 1rem 2rem 1rem;
+    border: none;
+    border-radius: 0px;
+    box-shadow: -2px 1px 8px 1px lightgrey; 
+  }
+  
+  .portfolio-card__image {
+    max-height: 13rem;
+  }
+  
+  .portfolio-card__title {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 2rem;
+    text-transform: uppercase;
+  }
+  
+  .portfolio-card__category {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1rem;
+    text-transform: uppercase;
+  }
+  
+  .portfolio-card__category__offices {
+    color: red;
+  }
+  
+  .portfolio-card__category__industrial {
+    color: blue;
+  }
+  
+  .portfolio-card__category__retail {
+    color: green;
+  }
+  
+  .portfolio-card__text {
+    font-family: 'Abel', sans-serif;
+    font-size: 1rem;
+  }
+  
+  .portfolio-card__stage {
+    color: white;
+    text-transform: uppercase;
+    padding: 6px;
+    font-family: 'Barlow Condensed', sans-serif;
+  }
+  
+  .portfolio-card__stage__icon {
+    margin-right: 5px;
+  }
+  
+  .portfolio-card__stage__complete {
+    background-color: green;
+  }
+  
+  .portfolio-card__stage__construction {
+    background-color: red;
+  }
+  
+  .portfolio-card__stage__planning {
+    background-color: lightblue;
+  }
+  
+  .portfolio-card__link {
+    font-family: 'Barlow Condensed', sans-serif;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    color: grey;
+    text-decoration: underline;
+    transition: 0.3s;
+  }
+  
+  .portfolio-card__link:hover {
+    color: black;
+  }
+  
+  .d{
+    display: inline-block; width: 100px; height: 50px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .di{
+    src: format();
+  }
+  .colorhead{
+    color: #591902;
+}
+#blanca
+{
+  color: white;
+}

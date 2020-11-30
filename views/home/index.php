@@ -6,7 +6,7 @@
 
 <center><img src="assets/img/sazon.png" alt="">
 
-    <h5 class="texto-bienvenida" id="fuente">Bienvenidos al buen sazon del aprendiz, espero encuentres muchos productos de tu agrado</h5>
+    <h4 class="" id="fuente">Bienvenidos al buen sazón del aprendiz, espero encuentres muchos productos de su agrado.</h4>
     <div class="content-all">
         <div class="content-carrousel">
             <figure><img src="https://cdn.colombia.com/gastronomia/2011/08/02/bandeja-paisa-1616.gif"></figure>
